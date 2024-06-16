@@ -38,8 +38,6 @@ def load_graph(dataset, in_mem=True):
     if 'fb100' in dataset:
         if dataset == 'fb100-cornell5':
             dataset = 'Cornell5'
-        elif dataset == 'fb100-johns_hopkins55':
-            dataset = 'Johns Hopkins55'
         elif dataset == 'fb100-penn94':
             dataset = 'Penn94'
         path = 'facebook'
