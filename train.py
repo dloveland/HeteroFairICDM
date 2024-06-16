@@ -108,8 +108,6 @@ class Trainer():
                 model = Model(self.model_type, depth, features.shape[1], hidden, nclass, dropout, *additional_params)
             elif self.model_type == 'linkx':
                 model = LINKX(num_nodes=num_nodes, in_channels=features.shape[1], hidden_channels=hidden, num_layers=depth, out_channels=nclass, dropout=dropout)
-            elif self.model_type == 'sgc':
-                model = SGC(nfeat=features.shape[1], nclass=nclass, depth=depth)
             else:
                 raise ValueError('Model type not supported')
           
@@ -201,7 +199,6 @@ if __name__ == '__main__':
     parity, equality = fair_metric(preds, labels[idx_test].cpu().numpy(), sens[idx_test])
 
     results = {'demographic_party': parity,
-                'equal_opportunity': equality,
                 'f1': f1_val,
                 'predictions': preds, 
                 'labels': labels[idx_test].cpu().numpy(),
