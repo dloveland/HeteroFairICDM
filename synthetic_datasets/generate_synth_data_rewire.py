@@ -36,9 +36,7 @@ def load_graph(dataset, in_mem=True):
 
     #load from memory the subgraphs/transformed data 
     if 'fb100' in dataset:
-        if dataset == 'fb100-cornell5':
-            dataset = 'Cornell5'
-        elif dataset == 'fb100-penn94':
+        if dataset == 'fb100-penn94':
             dataset = 'Penn94'
         path = 'facebook'
     else:
@@ -634,7 +632,6 @@ if __name__ == '__main__':
     weight_degree = False
     dataset = args.dataset
     features, labels, sens, edge_index = load_graph(dataset)
-    #features, labels, sens, edge_index, label_idx = load_graph('bail', path='../real_datasets/bail')
     print(get_global_homophily(edge_index, labels))
     print(get_global_homophily(edge_index, sens))
 
