@@ -152,7 +152,7 @@ def str2bool(v):
 if __name__ == '__main__':
     
     parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset', type=str, default='fb100-cornell5', help='pokec-z, pokec-n, fb100-cornell5, fb100-penn94, or tokolers')
+    parser.add_argument('--dataset', type=str, help='pokec-z, pokec-n, fb100-penn94, or tokolers')
     parser.add_argument('--model', type=str, default='gcn', help='model type')
     parser.add_argument('--device', type=str, default='cpu', help='cpu or cuda')
     parser.add_argument('--seed', type=int, default=123, help='random seed')
