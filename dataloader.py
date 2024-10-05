@@ -363,8 +363,8 @@ if __name__ == '__main__':
     # plot subplots for each dataset showing sorted distribution of unique labels and sens
     seeds = [123, 246, 492]
     shape_params = [None, (3.0, 10.0), (3.0,5.0), (5.0,3.0), (10.0,3.0)]
-    datasets = ['fb100-cornell5', 'pokec', 'fb100-penn94', 'tolokers']
-    gammas = [1.0]
+    datasets = ['pokec', 'fb100-penn94', 'tolokers']
+    gammas = [3.0]
 
     for dataset in datasets:
         for seed in seeds: 
