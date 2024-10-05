@@ -286,9 +286,7 @@ def load_dataset(dataset, device, stratify=False, seed=None, labeled_subgraph=Tr
         #load from memory the subgraphs/transformed data 
         if 'fb100' in dataset:
             orig_dataset = dataset 
-            if dataset == 'fb100-cornell5':
-                dataset = 'Cornell5'
-            elif dataset == 'fb100-penn94':
+            if dataset == 'fb100-penn94':
                 dataset = 'Penn94'
             path = 'facebook'
         else:
