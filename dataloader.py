@@ -204,9 +204,7 @@ def load_dataset(dataset, device, stratify=False, seed=None, labeled_subgraph=Tr
             #              second major/minor, dorm/house, year/ high school
             # 0 denotes missing entry
 
-            if dataset == 'fb100-cornell5':
-                dataset = 'Cornell5'
-            elif dataset == 'fb100-penn94':
+           if dataset == 'fb100-penn94':
                 dataset = 'Penn94'
 
             data = scipy.io.loadmat(f'real_datasets/facebook/{dataset}.mat')
