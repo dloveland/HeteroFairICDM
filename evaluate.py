@@ -146,7 +146,7 @@ if __name__ == '__main__':
     shape_params = [None, (3.0, 10.0), (3.0,5.0), (5.0,3.0), (10.0,3.0)]
     gammas = [0.0, 1.0, 3.0]
 
-    datasets = ['fb100-cornell5', 'fb100-penn94', 'tolokers', 'pokec']
+    datasets = ['fb100-penn94', 'tolokers', 'pokec']
 
     results = {}
 
