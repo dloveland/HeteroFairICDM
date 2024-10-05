@@ -5,7 +5,7 @@ In this repo we provide the code to (a) reproduce the data generation outlined i
 ### Data Generation
 
 The base Facebook, Pokec, and Tolokers datasets are not provided in the repo due to size. However, they can be found at:
-1. Facebook: https://networkrepository.com/socfb-Penn94.php, https://networkrepository.com/socfb-Cornell5.php
+1. Facebook: https://networkrepository.com/socfb-Penn94.php
 2. Pokec: https://snap.stanford.edu/data/soc-Pokec.html
 3. Tolokers: https://github.com/yandex-research/heterophilous-graphs/blob/main/data/tolokers.npz
 
